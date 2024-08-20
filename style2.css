@@ -3,7 +3,6 @@ body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -18,14 +17,10 @@ body {
 
 /* Header styling */
 header {
-   
     border: 3px solid aqua; /* Set the border color and width */
     color: aqua; /* Text color */
     padding: 1em 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns content to the left */
     height:40px;
     width: 250px; /* Adjusts width based on the navigation bar */
     border-radius: 30%;
@@ -137,7 +132,6 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 2em;
-
 }
 
 .section {
@@ -204,14 +198,7 @@ h2 {
     border-bottom: 2px solid aqua;
     margin-bottom: 40px;
 }
-.project {
-    margin-bottom: 2em;
-}
 
-.project img {
-    max-width: 100%;
-    height: auto;
-}
 
 /* Form styling */
 form {
@@ -283,20 +270,7 @@ footer {
     }
 }
 
-
-.about-container {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.about-text {
-    flex: 1;
-    margin-right: 20px;
-}
+/*about section styling*/
 .about-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -319,6 +293,20 @@ footer {
     color: black; /* White text */
     border: 3px solid black;
     
+}
+
+.about-container {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
 }
 
 .matter-box {
@@ -351,16 +339,7 @@ footer {
 .skills-section {
     text-align: center;
     margin-top: 40px;
-    
 }
-
-.skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -392,7 +371,6 @@ footer {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    
     line-height: 60px; /* Center the icon vertically */
     margin: 0 auto 10px; /* Center the icon horizontally and add spacing below */
 }
@@ -411,16 +389,6 @@ footer {
 
 .skill-box:nth-child(4) i {
     background-color: #61dafb; /* React color */
-}
-
-.skill-box p {
-    margin: 0;
-    font-weight: bold;
-    color: inherit; /* Inherit color from the background */
-    background-color: inherit; /* Inherit background color from the box */
-    padding: 5px;
-    border-radius: 4px;
-    display: inline-block;
 }
 
 
@@ -487,6 +455,7 @@ form button:hover {
     
 }
 
+/* portfolio styling*/
 .content-section {
     padding: 50px 0;
 }
@@ -501,7 +470,6 @@ form button:hover {
     display: flex;
     margin-bottom: 50px;
     border-radius: 10px;
-    overflow: hidden;
     align-items: center;
 }
 
