@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Toggle Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: lightsteelblue;
+            perspective: 1000px; /* Adds perspective to the 3D effect */
+        }
+
+        .container {
+            padding: 20px;
+            background-color: aqua;
+            border: 4px solid black; /* Correctly set border color and width */
+            border-top-left-radius: 30px; /* Top-left corner */
+            border-bottom-right-radius: 30px; /* Bottom-right corner */
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:lightcoral;
+            color: #fff;
+            width:120px;
+            
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+            transition: color 0.3s; /* Smooth transition for text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <button id="toggleButton">Click Me</button>
+        <p id="text">Hii, Do not click the above button.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('toggleButton');
+            const text = document.getElementById('text');
+            const container = document.getElementById('container');
+
+            let isToggled = false;
+
+            button.addEventListener('click', function() {
+                if (isToggled) {
+                    button.textContent = 'Click Me';
+                    text.textContent = 'Hey, Do not click the above button.';
+                    container.style.backgroundColor = 'aqua';
+                    container.style.borderColor = 'black'; /* Reset border color */
+                    text.style.color = 'black'; /* Reset text color */
+                } else {
+                    button.textContent = 'Reset';
+                    text.textContent = 'Are you done? Go back please.';
+                    container.style.backgroundColor = 'black';
+                    container.style.borderColor = 'aqua'; /* Change border color */
+                    text.style.color = 'aqua'; /* Change text color */
+                }
+                isToggled = !isToggled;
+            });
+        });
+    </script>
+</body>
+</html>
